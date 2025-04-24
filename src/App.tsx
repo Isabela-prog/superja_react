@@ -7,11 +7,15 @@ import Login from './pages/login/Login'
 import Cadastro from './pages/cadastro/Cadastro'
 import ListarUsuarios from './components/usuarios/listarUsuarios/ListarUsuarios'
 import { AuthProvider } from './context/AuthContext'
+import { ToastContainer } from 'react-toastify'
+import CardCategorias from './components/categoria/cardCategorias/CardCategorias'
 
 function App() {
   return (
     <>
+    
     <AuthProvider>
+    <ToastContainer />
         <BrowserRouter>
           <Navbar />
           <div className="min-h-[80vh]">
@@ -21,6 +25,7 @@ function App() {
               <Route path="/home" element={<Home />} />
               <Route path="/cadastro" element={<Cadastro />} />
               <Route path="/listarusuarios" element={<ListarUsuarios />} />
+              <Route path="/categoria" element={<CardCategorias />} />
 
               
             </Routes>
