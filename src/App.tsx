@@ -8,7 +8,8 @@ import Cadastro from './pages/cadastro/Cadastro'
 import ListarUsuarios from './components/usuarios/listarUsuarios/ListarUsuarios'
 import { AuthProvider } from './context/AuthContext'
 import { ToastContainer } from 'react-toastify'
-import CardCategorias from './components/categoria/cardCategorias/CardCategorias'
+import ListaCategorias from './components/categoria/listacategorias/ListaCategoria'
+import FormCategoria from './components/categoria/formcategoria/FormCategoria'
 
 function App() {
   return (
@@ -25,7 +26,9 @@ function App() {
               <Route path="/home" element={<Home />} />
               <Route path="/cadastro" element={<Cadastro />} />
               <Route path="/listarusuarios" element={<ListarUsuarios />} />
-              <Route path="/categoria" element={<CardCategorias />} />
+              <Route path="/categorias" element={<ListaCategorias />} />
+              <Route path="/cadastrarcategoria" element={<FormCategoria />} />
+              <Route path="/editarcategoria/:id" element={<FormCategoria />} />
 
               
             </Routes>
