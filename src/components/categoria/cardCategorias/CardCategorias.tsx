@@ -1,6 +1,11 @@
 import { Link } from 'react-router-dom'
+import Categoria from '../../../models/Categoria';
 
-function CardCategorias() {
+interface CardCategoriasProps {
+    categoria: Categoria;
+  }
+  
+  function CardCategorias({ categoria }: CardCategoriasProps) {
     return (
         <div className='border border-[#d0b75c] flex flex-col rounded-2xl overflow-hidden justify-between shadow-md'>
             <header className='py-2 px-6 bg-[#f7c98f] text-[#1D907D] font-bold text-2xl'>
@@ -8,7 +13,7 @@ function CardCategorias() {
             </header>
 
             <p className='p-8 text-3xl bg-[#fdf9f6] text-[#d97667] h-full'>
-                Descrição
+                {categoria.setor}
             </p>
 
             <div className="flex">
