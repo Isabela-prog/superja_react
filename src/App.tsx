@@ -10,6 +10,7 @@ import { AuthProvider } from './context/AuthContext'
 import { ToastContainer } from 'react-toastify'
 import ListaCategorias from './components/categoria/listacategorias/ListaCategoria'
 import FormCategoria from './components/categoria/formcategoria/FormCategoria'
+import DeletarCategoria from './components/categoria/deletarcategoria/DeletarCategoria'
 
 function App() {
   return (
@@ -29,6 +30,8 @@ function App() {
               <Route path="/categorias" element={<ListaCategorias />} />
               <Route path="/cadastrarcategoria" element={<FormCategoria />} />
               <Route path="/editarcategoria/:id" element={<FormCategoria />} />
+              <Route path="/deletarcategoria 
+              " element={<DeletarCategoria />} />
 
               
             </Routes>

@@ -5,7 +5,7 @@ import Categoria from "../../../models/Categoria";
 import { buscar } from "../../../services/Service";
 import { ToastAlerta } from "../../../utils/ToastAlerta";
 import { AuthContext } from "../../../context/AuthContext";
-import CardCategorias from "../cardCategorias/CardCategorias";
+import CardCategorias from "../cardCategorias/CardCategoria";
 
 function ListaCategorias() {
 

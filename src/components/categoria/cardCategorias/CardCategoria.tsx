@@ -23,10 +23,10 @@ interface CardCategoriasProps {
                     <button>Editar</button>
                 </Link>
 
-                <Link to='' 
-                    className='text-white bg-[#d97667] hover:bg-[#b75c50] w-full 
-                    flex items-center justify-center py-2 transition-colors'>
-                    <button>Deletar</button>
+                <Link to={`/deletarcategoria/${categoria.id}`} 
+	            className='text-slate-100 bg-red-400 hover:bg-red-700 w-full 
+		        flex items-center justify-center'>
+	            <button>Deletar</button>
                 </Link>
             </div>
         </div>

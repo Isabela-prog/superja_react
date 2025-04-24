@@ -104,7 +104,7 @@ function FormCategoria() {
                     <input
                         type="text"
                         placeholder="Descreva aqui sua categoria"
-                        name='descricao'
+                        name='setor'
                         className="border-2 border-slate-700 rounded p-2"
                         value={categoria.setor}
                         onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
