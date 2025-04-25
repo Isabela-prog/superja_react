@@ -32,7 +32,7 @@ function FormCategoria() {
 
     useEffect(() => {
         if (token === '') {
-            ToastAlerta('Você precisa estar logado!','Info')
+            ToastAlerta('Você precisa estar logado!','info')
             navigate('/')
         }
     }, [token])
