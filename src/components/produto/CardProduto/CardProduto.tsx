@@ -28,7 +28,10 @@ function CardProduto({ produto }: CardProdutosProps) {
         <h4 className="text-2xl font-semibold uppercase text-[#d97667]">
           {produto.nomeProduto}
         </h4>
-        <p className="text-lg">💰 Preço: R$ {produto.preco}</p>
+        <p className="text-lg">💰 Preço: {produto.preco.toLocaleString('pt-BR', {
+            style:'currency',
+            currency:'BRL'
+        })}</p>
         <p className="text-lg">🏷️ Categoria: {produto.categoria?.setor}</p>
         <p className="text-lg">
           📅 Validade:{" "}

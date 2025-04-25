@@ -4,6 +4,7 @@ import Produto from "../../../models/Produto"
 import { buscar, deletar } from "../../../services/Service"
 import { RotatingLines } from "react-loader-spinner"
 import { AuthContext } from "../../../context/AuthContext"
+import { ToastAlerta } from "../../../utils/ToastAlerta"
 
 function DeletarProduto() {
 
@@ -33,7 +34,7 @@ function DeletarProduto() {
 
     useEffect(() => {
         if (token === '') {
-            alert('Você precisa estar logado')
+            ToastAlerta('Você precisa estar logado', 'info')
             navigate('/')
         }
     }, [token])
@@ -54,13 +55,13 @@ function DeletarProduto() {
                 }
             })
 
-            alert('Produto apagado com sucesso')
+            ToastAlerta('Produto apagado com sucesso', 'sucesso')
 
         } catch (error: any) {
             if (error.toString().includes('403')) {
                 handleLogout()
             } else {
-                alert('Erro ao deletar o produto.')
+                ToastAlerta('Erro ao deletar o produto.', 'erro')
             }
         }
 
@@ -94,7 +95,7 @@ function DeletarProduto() {
                     </button>
                     <button 
                         className='w-full text-slate-100 bg-indigo-400 
-                                   hover:bg-indigo-600 flex items-center justify-center'
+                                   hover:bg-orange-600 flex items-center justify-center'
                                    onClick={deletarProduto}>
                         {isLoading ?
                             <RotatingLines

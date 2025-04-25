@@ -12,8 +12,9 @@ import ListaCategorias from './components/categoria/listacategorias/ListaCategor
 import FormCategoria from './components/categoria/formcategoria/FormCategoria'
 import DeletarCategoria from './components/categoria/deletarcategoria/DeletarCategoria'
 import ListaProduto from './components/produto/ListaProduto/listaProduto'
-import FormProduto from './components/produto/formproduto/FormProduto'
 import DeletarProduto from './components/produto/deletarproduto/DeletarProduto'
+import FormProduto from './components/produto/formproduto/formProduto'
+import Perfil from './pages/perfil/Perfil'
 
 function App() {
   return (
@@ -39,8 +40,7 @@ function App() {
               <Route path="/cadastrarproduto" element={<FormProduto />} />
               <Route path="/editarproduto/:id" element={<FormProduto />} />
               <Route path="/deletarproduto/:id" element={<DeletarProduto />} />
-
-              
+              <Route path="/perfil" element={<Perfil />} />
             </Routes>
           </div>
           <Footer />
