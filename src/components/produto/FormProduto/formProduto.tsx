@@ -5,6 +5,7 @@ import { RotatingLines } from "react-loader-spinner";
 import { ToastAlerta } from "../../../utils/ToastAlerta";
 import Categoria from "../../../models/Categoria";
 import { AuthContext } from "../../../context/AuthContext";
+import Produto from "../../../models/Produto";
 
 function FormProduto() {
 
@@ -13,8 +14,8 @@ function FormProduto() {
     const [isLoading, setIsLoading] = useState<boolean>(false)
     const [categorias, setCategorias] = useState<Categoria[]>([])
 
-    const [categoria, setCategoria] = useState<Categoria>({ id: null, setor: '', })
-    const [produto, setProduto] = useState<Categoria>({} as Categoria)
+    const [categoria, setCategoria] = useState<Categoria>({ id: 0, setor: '', })
+    const [produto, setProduto] = useState<Produto>({} as Produto)
 
     const { id } = useParams<{ id: string }>()
 
