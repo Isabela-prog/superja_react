@@ -6,7 +6,7 @@ export default interface Produto {
     nomeProduto: string;
     estoque: number;
     preco: number;
-    validade: Date;
+    validade: string;
     categoria?: Categoria | null;
     usuario?: Usuario | null;
 }

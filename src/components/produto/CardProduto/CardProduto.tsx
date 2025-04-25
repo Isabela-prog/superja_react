@@ -25,8 +25,7 @@ function CardProduto({ produto }: CardProdutosProps) {
                     <p>{produto.preco}</p>
                     <p>Categoria: {produto.categoria?.setor}</p>
                     <p>Data de Validade: {new Intl.DateTimeFormat(undefined, {
-                        dateStyle: 'full',
-                        timeStyle: 'medium',
+                        dateStyle: 'short'
                     }).format(new Date(produto.validade))}</p>
                 </div>
             </div>
