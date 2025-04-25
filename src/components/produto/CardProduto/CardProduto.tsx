@@ -2,11 +2,7 @@ import { Link } from 'react-router-dom'
 import Produto from '../../../models/Produto'
 
 interface CardProdutosProps {
-<<<<<<< HEAD
-produto: Produto
-=======
   produto: Produto
->>>>>>> 34e3209b50c4b323496f81e84ba0f46a7dc7de19
 }
 
 function CardProduto({ produto }: CardProdutosProps) {
