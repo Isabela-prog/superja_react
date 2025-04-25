@@ -6,14 +6,14 @@ function Footer() {
 
     return (
         <>
-            <div className="flex justify-center bg-[#1D907D] text-white">
+            <div className="flex justify-center bg-[#FB6822] text-white">
                 <div className="container flex flex-col items-center py-4">
                     <p className='text-xl font-bold font-serif'>
                             SuperJa | Copyright: {data}
                         </p>
                     <p className='text-lg font-serif'>Para mais projetos acesse! </p>
                     <div className='flex gap-2'>
-                        <a href="https://github.com/Abilafora/react_ladydrive" target="_blank">
+                        <a href="https://github.com/Abilafora/superja_react" target="_blank">
                     <GithubLogo size={32} weight='bold' />
                     </a>
                     </div> 
