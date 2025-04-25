@@ -15,6 +15,7 @@ import ListaProduto from './components/produto/ListaProduto/listaProduto'
 import DeletarProduto from './components/produto/deletarproduto/DeletarProduto'
 import FormProduto from './components/produto/formproduto/formProduto'
 import Perfil from './pages/perfil/Perfil'
+import Sobre from './pages/sobre/Sobre'
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
               <Route path="/editarproduto/:id" element={<FormProduto />} />
               <Route path="/deletarproduto/:id" element={<DeletarProduto />} />
               <Route path="/perfil" element={<Perfil />} />
+              <Route path="/sobre" element={<Sobre />} />
             </Routes>
           </div>
           <Footer />
