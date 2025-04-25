@@ -17,7 +17,7 @@ interface CardCategoriasProps {
             </p>
 
             <div className="flex">
-            <Link to={`/editartema/${categoria.id}`}
+            <Link to={`/editarcategoria/${categoria.id}`}
                     className='w-full text-white bg-[#1D907D] hover:bg-[#157465] 
                         flex items-center justify-center py-2 transition-colors'>
                     <button>Editar</button>

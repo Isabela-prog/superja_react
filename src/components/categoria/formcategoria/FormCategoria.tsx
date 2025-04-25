@@ -63,7 +63,7 @@ function FormCategoria() {
                 await atualizar(`/categorias`, categoria, setCategoria, {
                     headers: { 'Authorization': token }
                 })
-                ToastAlerta('A Categoria foi atualizada com sucesso!', 'Sucesso')
+                ToastAlerta('A Categoria foi atualizada com sucesso!', 'sucesso')
             } catch (error: any) {
                 if (error.toString().includes('403')) {
                     handleLogout();
@@ -77,7 +77,7 @@ function FormCategoria() {
                 await cadastrar(`/categorias`, categoria, setCategoria, {
                     headers: { 'Authorization': token }
                 })
-                ToastAlerta('A Categoria foi cadastrada com sucesso!', 'Sucesso')
+                ToastAlerta('A Categoria foi cadastrada com sucesso!', 'sucesso')
             } catch (error: any) {
                 if (error.toString().includes('403')) {
                     handleLogout();
