@@ -172,6 +172,18 @@ function FormProduto() {
                     />
                 </div>
                 <div className="flex flex-col gap-2">
+                    <label htmlFor="validade">Validade do produto</label>
+                    <input
+                        type="date"
+                        placeholder="validade"
+                        name="validade"
+                        required
+                        className="border-2 border-slate-700 rounded p-2"
+                        value={produto.validade}
+                        onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
+                    />
+                </div>
+                <div className="flex flex-col gap-2">
                     <p>Categoria do Produto</p>
                     <select name="categoria" id="categoria" className='border p-2 border-slate-800 rounded'
                         onChange={(e) => buscarCategoriaPorId(e.currentTarget.value)}
