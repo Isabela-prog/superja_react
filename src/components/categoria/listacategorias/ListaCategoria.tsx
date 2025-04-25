@@ -30,7 +30,7 @@ function ListaCategorias() {
 
     useEffect(() => {
         if (token === '') {
-            ToastAlerta('VocÃª precisa estar logado!', "info")
+            ToastAlerta('Você precisa estar logado!', "info")
             navigate('/')
         }
     }, [token])
