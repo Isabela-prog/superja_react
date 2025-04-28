@@ -13,7 +13,7 @@ function CardProduto({ produto }: CardProdutosProps) {
         <img
           src={
             produto.usuario?.foto ||
-            "https://ik.imagekit.io/2zvbvzaqt/vecteezy_user-icon-in-trendy-flat-style-isolated-on-grey-background_5005837.jpg?updatedAt=1744726063905"
+            "https://i.postimg.cc/k57vpn1q/35489121b54e34840b7f16f34951eacc.jpg"
           }
           className="h-12 w-12 rounded-full object-cover"
           alt={produto.usuario?.nome}

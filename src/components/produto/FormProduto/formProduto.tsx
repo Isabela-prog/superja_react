@@ -13,6 +13,7 @@ function FormProduto() {
   const [categorias, setCategorias] = useState<Categoria[]>([]);
   const [categoria, setCategoria] = useState<Categoria>({ id: 0, setor: "" });
   const [produto, setProduto] = useState<Produto>({} as Produto);
+  const [desconto, setDesconto] = useState<string>('');
 
   const { id } = useParams<{ id: string }>();
   const { usuario, handleLogout } = useContext(AuthContext);
@@ -67,13 +68,30 @@ function FormProduto() {
     });
   }, [categoria]);
 
+  function verificarDesconto(preco: string) {
+    const precoNum = parseFloat(preco);  // Converte para número
+    if (!isNaN(precoNum) && precoNum > 50.01) {
+      setDesconto("Esse produto tem um desconto de 10%!");
+    } else {
+      setDesconto('');
+    }
+  }
+
   function atualizarEstado(e: ChangeEvent<HTMLInputElement>) {
+    const { name, value } = e.target;
+  
+    // Atualiza o estado do produto com o valor do input
     setProduto({
       ...produto,
-      [e.target.name]: e.target.value,
+      [name]: value,
       categoria: categoria,
       usuario: usuario,
     });
+  
+    // Verifica o desconto apenas quando o campo alterado for 'preco'
+    if (name === 'preco') {
+      verificarDesconto(value);  // Chama a função de desconto com o valor do preço
+    }
   }
 
   function retornar() {
@@ -109,6 +127,7 @@ function FormProduto() {
   }
 
   const carregandoCategoria = categoria.setor === "";
+
 
   return (
     <div className="container flex flex-col mx-auto items-center px-4">
@@ -147,7 +166,9 @@ function FormProduto() {
             className="border-2 border-[#f7c98f] rounded p-2 focus:outline-[#1D907D]"
             value={produto.preco}
             onChange={atualizarEstado}
+            
           />
+         {desconto && <p className="text-red-500 font-semibold">{desconto}</p>} {/* Exibe o desconto */}
         </div>
 
         <div className="flex flex-col gap-2">
@@ -178,7 +199,7 @@ function FormProduto() {
               Selecione uma Categoria
             </option>
             {categorias.map((categoria) => (
-              <option key={categoria.id} value={categoria.id}>
+              <option key={categoria.id} value={categoria.id!}>
                 {categoria.setor}
               </option>
             ))}
