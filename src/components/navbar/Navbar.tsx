@@ -28,8 +28,6 @@ function Navbar() {
                     <Link to='/produto' className='hover:underline'>Produto</Link> /}
                     {/ <Link to='/login' className='hover:underline'>Login</Link> */}
                     <Link to='/categorias' className='hover:underline'>Categorias</Link>
-                    <Link to='/cadastrarcategoria' className='hover:underline'>Cadastrar categoria</Link>
-                    <Link to='/cadastrarproduto' className='hover:underline'>Cadastrar produto</Link>
                     <Link to='/produtos' className='hover:underline'>Produtos</Link>
                     <Link to='/sobre' className='hover:underline'>Sobre Nós</Link>
                     <Link to='/perfil' className='hover:underline'>Perfil</Link>

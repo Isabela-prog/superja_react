@@ -16,17 +16,17 @@ function Home() {
 
             <div className="flex flex-col md:flex-row gap-4 mt-4">
               <Link
-                to="/produtos"
+                to="/cadastrarproduto"
                 className="rounded text-white bg-[#FE6C02] hover:bg-[#cc5600] py-2 px-4 transition-all"              
               >
-                Ver Produtos
+                Cadastrar Produtos
               </Link>
 
               <Link
-                to="/categorias"
+                to="/cadastrarcategoria"
                 className="rounded text-white bg-[#FE6C02] hover:bg-[#cc5600] py-2 px-4 transition-all"
               >
-                Ver Categorias
+                Cadastrar Categorias
               </Link>
             </div>
           </div>
