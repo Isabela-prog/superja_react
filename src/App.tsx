@@ -13,9 +13,9 @@ import FormCategoria from './components/categoria/formcategoria/FormCategoria'
 import DeletarCategoria from './components/categoria/deletarcategoria/DeletarCategoria'
 import ListaProduto from './components/produto/ListaProduto/listaProduto'
 import DeletarProduto from './components/produto/deletarproduto/DeletarProduto'
-import FormProduto from './components/produto/formproduto/formProduto'
 import Perfil from './pages/perfil/Perfil'
 import Sobre from './pages/sobre/Sobre'
+import FormProduto from './components/produto/FormProduto/formProduto'
 
 function App() {
   return (
