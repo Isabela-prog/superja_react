@@ -1,54 +1,79 @@
-# React + TypeScript + Vite
+# SuperJá 🛒✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação desenvolvida em React para o projeto **SuperJá**, um sistema de delivery de supermercado voltado ao gerenciamento de produtos e categorias, além do cadastro de funcionários.  
+Como regra de negócio, utilizou-se o **desconto de 10% para produtos acima de R$ 50,00**.
 
-Currently, two official plugins are available:
+Projeto desenvolvido como parte do curso de **Desenvolvimento FullStack Java da Generation Brasil**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologias Utilizadas
 
-## Expanding the ESLint configuration
+- React
+  TypeScript
+- Vite
+- React Router DOM
+- Tailwind CSS
+- Axios
+- React Hook Form
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 💡 Funcionalidades
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- [x] Cadastro, login e autenticação de funcionário
+- [x] Listagem, cadastro, edição e exclusão de produtos
+- [x] Listagem, cadastro, edição e exclusão de categorias
+- [x] Interface adaptável (responsiva)
+- [x] Comunicação com backend via API
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🎨 Paleta de Cores
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Lady Purple** `#6F2473`
+- **Soft Pink** `#F4D8E4`
+- **Lavender Mist** `#B57EDC`
+- **Deep Aubergine** `#4B2142`
+- **Snow White** `#FFFFFF`
+- **Cloud Gray** `#EDEDED`
+- **Rose Red** `#D72638`
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🛠️ Como Rodar o Projeto
+
+1. Clone o repositório:
+   ```
+   git clone https://github.com/Isabela-prog/superja_react.git
+   cd superja_react
+2. Instale as dependências:
+
+   ```bash
+   npm install
+3. Configure o arquivo .env com a URL da API:
+   ```bash
+    VITE_API_URL=http://localhost:4000
+4.Inicie o servidor de desenvolvimento:
+    ```bash
+      npm run dev
+
+## 📁 Estrutura do Projeto
+    superja_react/
+    ├── public/              # Arquivos estáticos (favicon, imagens públicas, etc.)
+    ├── src/
+    │   ├── assets/          # Imagens
+    │   ├── components/      # Componentes reutilizáveis da interface
+    │   ├── pages/           # Páginas principais da aplicação
+    │   ├── services/        # Módulos para consumo de API
+    │   ├── types/           # Tipagens TypeScript utilizadas no projeto
+    │   ├── hooks/           # Hooks personalizados
+    │   └── App.tsx          # Componente principal da aplicação
+    ├── .env                 # Variáveis de ambiente (URL da API)
+    ├── vite.config.ts       # Configuração do Vite
+    ├── tsconfig.json        # Configuração do TypeScript
+    ├── package.json         # Dependências e scripts do projeto
+    ├── tailwind.config.ts   # Configuração do Tailwind CSS
+
+
+##👩‍💻 Desenvolvedoras
+- [@Isabela-prog](https://github.com/Isabela-prog)
+- [@EvelynSantos6](https://github.com/EvelynSantos6)
+- [@maytearaujo](https://github.com/maytearaujo)
+- [@ThainaraCruz](https://github.com/ThainaraCruz)
+- [@Abilafora](https://github.com/Abilafora)
+- [@hellengleice](https://github.com/hellengleice)
+
+
