@@ -11,7 +11,7 @@ function Home() {
           <div className="flex flex-col gap-2 items-center justify-center text-center">
             <h2 className="text-5xl font-bold">Seja Bem Vinde!</h2>
             <p className="text-xl italic">
-              O melhor do supermercado diretamente para a sua porta.
+              Tudo que você precisa num lugar só.
             </p>
 
             <div className="flex flex-col md:flex-row gap-4 mt-4">
