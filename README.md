@@ -67,8 +67,7 @@ Projeto desenvolvido como parte do curso de **Desenvolvimento FullStack Java da 
     ├── package.json         # Dependências e scripts do projeto
     ├── tailwind.config.ts   # Configuração do Tailwind CSS
 
-
-##👩‍💻 Desenvolvedoras
+## 👩‍💻 Desenvolvedoras
 - [@Isabela-prog](https://github.com/Isabela-prog)
 - [@EvelynSantos6](https://github.com/EvelynSantos6)
 - [@maytearaujo](https://github.com/maytearaujo)
